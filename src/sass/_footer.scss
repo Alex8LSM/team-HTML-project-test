@@ -1,4 +1,7 @@
 .footer {
-    background-color: green;
-    height: 100px;
+    $footer-bgc: #FFF5F6;
+    
+
+    background-color: $footer-bgc;
+    height: 300px;
 }
