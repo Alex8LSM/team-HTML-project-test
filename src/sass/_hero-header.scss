@@ -1,3 +1,23 @@
-.hero {
+.header {
     background-color: #FFB8CA;
+   
+}
+
+.navigation {
+    border: 1px solid blue;
+}
+
+.nav-tools {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 20px;
+    height: 40px;
+}
+
+.hero {
+    display: flex;
 }
