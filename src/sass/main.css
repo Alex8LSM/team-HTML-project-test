@@ -3,6 +3,24 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+.hide {
+  text-align: center;
+}
+
+.reviews__img {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.reviews__description {
+  margin-bottom: 35px;
+}
+
 body {
   letter-spacing: 0.03em;
 }
@@ -51,23 +69,5 @@ img {
 .footer {
   background-color: green;
   height: 100px;
-}
-
-.hide {
-  text-align: center;
-}
-
-.reviews__img {
-  width: 100px;
-  height: 100px;
-  background-position: center;
-  border: 1px solid red;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
-}
-
-.reviews__description {
-  margin-bottom: 35px;
 }
 /*# sourceMappingURL=main.css.map */
