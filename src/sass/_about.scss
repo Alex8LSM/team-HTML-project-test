@@ -1,0 +1,52 @@
+.section-about {
+    background-color: #FFF5F6;    
+
+    &__lable {
+        color: #FFA5BA;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.17;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    &__title {
+        color: #D41443;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.15;
+        align-items: center;
+        letter-spacing: 0.04;
+        text-transform: uppercase;
+    }
+    &__text-bold {
+        color: #000000;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.58;        
+    }
+    &__text {
+        color: #907E82;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.58;        
+    }
+    &__button {
+        position: absolute;
+        width: 176px;
+        height: 44px;
+        background-color: #FFFFFF;
+        border-radius: 22px;
+        color: #D41443;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.29;
+        text-align: center;
+        padding-left: 37px;
+        padding-right: 56px;
+    }
+    &__icon {
+        fill: #D41443;
+        vertical-align: middle;
+        margin-left: 14px;
+    }
+}
