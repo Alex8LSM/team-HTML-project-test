@@ -1,0 +1,29 @@
+.container {
+}
+.hide {
+  text-align: center;
+}
+.reviews {
+  &__customer {
+  }
+  &__card {
+  }
+  &__img {
+    // background-image: url(../images/1.png);
+    width: 100px;
+    height: 100px;
+    // background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  &__description {
+    margin-bottom: 35px;
+  }
+  &__info {
+  }
+  &__nav {
+  }
+}
