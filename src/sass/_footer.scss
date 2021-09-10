@@ -1,4 +1,102 @@
+$footer-bgc: #FFF5F6;
+$footer-text1: #FFA5BA;
+$accent: #D41443;
+$footer-svg-bgc: #FEA5BB;
+$footer-copy: #907E82;
+
+.container {
+    padding: 0 20px;
+}
+
 .footer {
-    background-color: green;
-    height: 100px;
+
+    background-color: $footer-bgc;
+    // height: 300px;
+    min-width: 320px;
+
+    outline: 1px solid black;
+
+    &__title-one {
+        font-size: 18px;
+        line-height: 1.167;
+        text-transform: uppercase;
+        color: $footer-text1;
+        text-align: left;
+
+        margin-bottom: 17px;
+
+        outline: 2px solid blue;
+        display: block;
+    }
+
+    &__title-two {
+        display: block;
+        font-size: 34px;
+        line-height: 1.147;
+        letter-spacing: 0.04em;
+        color: $accent;
+        text-align: left;
+
+        outline: 2px solid blue;
+    }
+}
+
+.text-box {
+    outline: 1px solid orange;
+
+    margin-bottom: 43px;
+}
+
+.social-box {
+    outline: 1px solid cyan;
+
+    margin-bottom: 46px;
+
+    &__links {
+        
+
+        display: flex;
+        justify-content: flex-end;
+    }
+     &__list {
+        outline: 1px solid green;
+
+        &:not(:first-child) {
+            margin-left: 28px;
+        }
+    }
+
+    // Видалити
+    &__icon-holder {
+        width: 32px;
+        height: 32px;
+        background-color: $accent;
+        border-radius: 50%;
+    }
+}
+
+.contact-box {
+    outline: 1px solid orange;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+
+    &__phone {
+        color: $accent;
+    }
+}
+
+.copyright-box {
+     outline: 1px solid red;
+    &__text {
+        color: $footer-copy;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.52;
+        text-align: center;
+
+        outline: 1px solid blue;
+    }
 }
