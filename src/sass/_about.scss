@@ -8,6 +8,7 @@
         line-height: 1.17;
         align-items: center;
         text-transform: uppercase;
+        margin-bottom: 15px;
     }
     &__title {
         color: #D41443;
@@ -17,18 +18,21 @@
         align-items: center;
         letter-spacing: 0.04;
         text-transform: uppercase;
+        margin-bottom: 26px;
     }
     &__text-bold {
         color: #000000;
         font-size: 12px;
         font-weight: 500;
-        line-height: 1.58;        
+        line-height: 1.58;
+        margin-bottom: 47px;        
     }
     &__text {
         color: #907E82;
         font-size: 12px;
         font-weight: 500;
-        line-height: 1.58;        
+        line-height: 1.58;  
+        margin-bottom: 47px;    
     }
     &__button {
         position: absolute;
