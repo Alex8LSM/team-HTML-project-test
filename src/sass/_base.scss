@@ -1,7 +1,7 @@
 body {
     letter-spacing: 0.03em;
     min-height: 100vh;
-
+    font-family: $font-primary;
   }
   
   ul {
@@ -33,5 +33,11 @@ body {
   * {
     box-sizing: border-box;
   }
+
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;  
+}
   
  
