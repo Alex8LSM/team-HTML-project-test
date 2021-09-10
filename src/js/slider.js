@@ -1,15 +1,33 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
+//   // Optional parameters
   direction: 'horizontal',
   loop: true,
+
+//   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
+
+  simulateTouch: true,
+  grabCursor: true,
+
+
+  slideToClickedSlide: true,
+
+  // zoom: {
+  //   maxRatio: 2,
+  //   minRatio: 1,
   // },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
 });
