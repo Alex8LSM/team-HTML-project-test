@@ -54,6 +54,7 @@ img {
   margin: 0 auto;
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -64,6 +65,10 @@ img {
   .container {
     width: 768px;
   }
+=======
+header {
+  background-color: #550317;
+>>>>>>> Stashed changes
 }
 
 @media screen and (min-width: 1280px) {
