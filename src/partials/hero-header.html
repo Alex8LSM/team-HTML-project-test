@@ -1,54 +1,57 @@
 <!-- Хедер -->
 <header class="header">
-    <!-- Логотип -->
+    <div class="header-holder">
+        <!-- Логотип -->
 
-        <a href="./index.html" class="logo">ЛОГОТИП</a>  
+            <a href="./index.html" class="logo">ЛОГОТИП</a>  
 
-    <!-- Кнопка бургера -->
+        <!-- Кнопка бургера -->
 
-    <button type="button"
+        <button type="button"
 
-        class="js-open-menu"
-        aria-expanded="false"
-        aria-controls="menu">
+            class="js-open-menu"
+            aria-expanded="false"
+            aria-controls="menu">
 
-        <svg class="icon-close" width="20" height="12">
-        <use href="#"></use>
-        </svg>
-        кнопка бургер
-    </button>
-
-    <!-- Меню -->
-
-    <div class="nav-tools  js-menu-container" id="menu">
-
-        <!-- Кнопка закриття мобильного меню -->
-        <button type="button" class="nav-tools__menu-button js-close-menu">
-            <svg class="icon-close" width="14" height="14">
-                <use href="#"></use>
+            <svg class="icon-close" width="20" height="12">
+            <use href="#"></use>
             </svg>
-            кнопка закриття
+            кнопка бургер
         </button>
 
-        <!-- Кнопка навигаціцї та відкриття модалки -->
+        <!-- Меню -->
 
-        <button type="button" class="nav-tools__button">
-        Buy now
-        </button>
+        <div class="nav-tools  js-menu-container" id="menu">
 
-        <!-- Навігація сайту -->
+            <!-- Кнопка закриття мобильного меню -->
+            <button type="button" class="nav-tools__close-button js-close-menu">
+                <svg class="icon-close" width="14" height="14">
+                    <use href="#"></use>
+                </svg>
+                кнопка закриття
+            </button>
 
-        <nav class="navigation">
+            <!-- Кнопка навигаціцї та відкриття модалки -->
 
-            <ul class="navigation-list">
-                <li class="navigation__item"><a class="navigation__link navigation__link--current">Home</a></li>
-                <li class="navigation__item"><a class="navigation__link">About us</a></li>
-                <li class="navigation__item"><a class="navigation__link">How it’s made?</a></li>
-                <li class="navigation__item"><a class="navigation__link">Our products</a></li>
-                <li class="navigation__item"><a class="navigation__link">Contact</a></li>
-            </ul>
+            <button type="button" class="nav-tools__button">
+            Buy now
+            </button>
 
-        </nav>
+            <!-- Навігація сайту -->
+
+            <nav class="navigation">
+
+                <ul class="navigation-list">
+                    <li class="navigation__item"><a class="navigation__link navigation__link--current">Home</a></li>
+                    <li class="navigation__item"><a class="navigation__link">About us</a></li>
+                    <li class="navigation__item"><a class="navigation__link">How it’s made?</a></li>
+                    <li class="navigation__item"><a class="navigation__link">Our products</a></li>
+                    <li class="navigation__item"><a class="navigation__link">Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
 
     </div>
 
@@ -58,11 +61,11 @@
 
         <!-- Картинка Галі-->
 
-        <a href="#" class="Hero__link">SOOOOOO TASTY! <img src="#" alt="#" class="hero__image"></a>
+        <a href="#" class="hero__link">SOOOOOO TASTY! <img src="#" alt="#" class="hero__image"></a>
 
         <!-- Каартинка Морозиво і круг-->
 
-        <a href="#" Hero__link>
+        <a href="#" class="hero__link" >
             <img src="#" alt="#" class="hero__image"> круг
             <img src="#" alt="#" class="hero__image">Морозиво
         </a>
