@@ -1,0 +1,50 @@
+header {
+    background-color: #FFB8CA;
+
+    .header-holder{
+        border: 1px solid teal;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }
+}
+
+.nav-tools {
+    display: block;
+    overflow-y: scroll;
+    pointer-events: none;
+    flex-direction: column;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 320px;
+    width: 320px;
+    background-color: blue;
+    z-index: 15;
+    transform: translateX(100%);
+}
+
+.js-close-menu {
+    position: absolute;
+    top: 0;
+    right:0;
+    background-color: transparent; 
+    background-color: white;
+}
+
+.nav-tools.is-open {
+   pointer-events: auto;
+   display: block;
+   transform: translateX(0);
+}
+.hero {
+    position: relative;
+    .hero__image,
+    .hero__link {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+}
