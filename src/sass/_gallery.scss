@@ -1,14 +1,29 @@
-.gallery__section {
+.gallery-section {
+    max-width: 2000px;
+    height: 122px;
     padding: 48.5px 0 40px 0;
-    background-image: linear-gradient (
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
         to bottom,
-        #FFF5F6 48.5px,
-        #E5E5E5 48.5px
-    ) ;
+         #FFF5F6 80%,
+         #E5E5E5 80%,
+    );
 }
 
 .container {
-    width: 364px;
-    padding: 0 26px 0 18px;
     margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+    width: 480px;
+    }    
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
 }
