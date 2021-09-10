@@ -6,7 +6,7 @@
         "_reviews.scss",
         "_base.scss",
         "_gallery.scss",
-        "_hero-section.scss",
+        "_hero-header.scss",
         "_footer.scss"
     ],
     "names": [],
