@@ -1,29 +1,89 @@
 header {
+    height: 502px;
     background-color: #FFB8CA;
-
+    padding: 6px 20px 0 20px;
+    position: relative;
+    overflow: hidden;
+    
     .header-holder{
-        border: 1px solid teal;
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 60px;
+        margin-bottom: 137px;
+    }
+    
+    .header-logo {
+        fill: $accent-color;
     }
 }
 
+// Меню Навігації
 .nav-tools {
-    display: block;
+    display: flex;
     overflow-y: scroll;
     pointer-events: none;
     flex-direction: column;
     height: 60px;
+    padding-top: 60px;
     position: fixed;
     top: 0;
     right: 0;
-    height: 320px;
-    width: 320px;
-    background-color: blue;
+    height: 100vh;
+    width: 250px;
+    background-color: $background-mobile-menu;
     z-index: 15;
     transform: translateX(100%);
+}
+
+.navigation-list {
+    display: block;
+
+    .navigation__item {
+        display: flex;
+        align-items: center;
+        height: 42px;
+        padding-left: 21px;
+        border: 1px solid #E18298;
+    }
+
+
+    .navigation__link {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.28;
+        color: $button-white-color;
+    }
+}
+
+.burger{
+    background-color: transparent;
+    padding: 0;
+    .icon-menu{
+    fill: $accent-color;    
+    }
+}
+
+.nav-tools__button {
+    width: 209px;
+    height: 44px;
+    
+    background-color: $button-white-color;
+    border-radius: 22px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 19px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: $accent-color;
+
+    .icon-buy {
+        margin-left: 16px;
+    }
 }
 
 .js-close-menu {
@@ -36,15 +96,99 @@ header {
 
 .nav-tools.is-open {
    pointer-events: auto;
-   display: block;
    transform: translateX(0);
 }
+
+// Банер герой
 .hero {
-    position: relative;
+    // position: relative;
     .hero__image,
     .hero__link {
         position: absolute;
         left: 50%;
         top: 50%;
     }
+}
+.caption {
+    position: absolute;
+    z-index: 10;
+    .caption__title {
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $button-white-color;
+        z-index: 10;
+        margin-bottom: 19px;
+        
+        .caption__span {
+            color: $accent-color;
+            font-size: 48px;
+            line-height: 0.96;
+            text-transform: uppercase;
+        }
+    }
+
+    .button-hold {
+        display: flex;
+        .caption__button-1,
+        .caption__button-2{
+            height: 24px;
+            font-size: 8px;
+            line-height: 1.25;
+            border-radius: 20px;
+            padding: 0 14px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .caption__button-1 {
+            background-color: $accent-color;
+            color: $button-white-color;
+            margin-right: 10px;
+            width: 62px;
+        }
+
+        .caption__button-2 {
+            background-color:$button-white-color ;
+            color: $accent-color;
+            width: 84px;
+        }
+    }
+}
+
+// Картинки на герої
+.box-image {
+    width: 346px;
+    height: 344px;
+    background-image: url(..//images/hero-header/Ellipse_3.png);
+    background-size:346px 344px;
+    background-repeat:no-repeat;
+    position: absolute; 
+    left: 12vw;
+    bottom: 75px;
+    z-index: 1;  
+}
+
+.hero__link--icecream {
+    width: 171px;
+    height: 410px;
+    background-image: url(..//images/hero-header/ice-cream.png);
+    background-size:171px 410px;
+    background-repeat:no-repeat;
+    position: absolute; 
+    left: 37vw;
+    bottom: 0;
+    z-index: 3;  
+}
+// Секція счетчика
+.counter-sale {
+    display: none;
+}
+
+.big-eco {
+    display: none;
 }
