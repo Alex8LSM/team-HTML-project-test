@@ -1,6 +1,5 @@
 body {
     letter-spacing: 0.03em;
-    min-height: 100vh;
     font-family: $font-primary;
   }
   
@@ -28,10 +27,6 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
-  }
-  
-  * {
-    box-sizing: border-box;
   }
 
   .container{

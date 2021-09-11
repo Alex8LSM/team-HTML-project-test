@@ -1,8 +1,8 @@
-$footer-bgc: #FFF5F6;
-$footer-text1: #FFA5BA;
-$accent: #D41443;
+$second-section-color: #FFF5F6;
+$primary-header-color: #FFA5BA;
+$accent-color: #D41443;
 $footer-svg-bgc: #FEA5BB;
-$footer-copy: #907E82;
+$primary-text-color: #907E82;
 
 .container {
     padding: 0 20px;
@@ -10,7 +10,7 @@ $footer-copy: #907E82;
 
 .footer {
 
-    background-color: $footer-bgc;
+    background-color: $second-section-color;
     // height: 300px;
     min-width: 320px;
 
@@ -20,7 +20,7 @@ $footer-copy: #907E82;
         font-size: 18px;
         line-height: 1.167;
         text-transform: uppercase;
-        color: $footer-text1;
+        color: $primary-header-color;
         text-align: left;
 
         margin-bottom: 17px;
@@ -34,7 +34,7 @@ $footer-copy: #907E82;
         font-size: 34px;
         line-height: 1.147;
         letter-spacing: 0.04em;
-        color: $accent;
+        color: $accent-color;
         text-align: left;
 
         outline: 2px solid blue;
@@ -70,7 +70,7 @@ $footer-copy: #907E82;
     &__icon-holder {
         width: 32px;
         height: 32px;
-        background-color: $accent;
+        background-color: $accent-color;
         border-radius: 50%;
     }
 }
@@ -84,14 +84,14 @@ $footer-copy: #907E82;
     text-align: right;
 
     &__phone {
-        color: $accent;
+        color: $accent-color;
     }
 }
 
 .copyright-box {
      outline: 1px solid red;
     &__text {
-        color: $footer-copy;
+        color: $primary-text-color;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.52;
