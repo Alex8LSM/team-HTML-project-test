@@ -1,29 +1,44 @@
 .gallery-section {
     max-width: 2000px;
-    height: 122px;
-    padding: 48.5px 0 40px 0;
+    height: 210px;
+    padding-bottom: 80px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(
         to bottom,
-         #FFF5F6 80%,
-         #E5E5E5 80%,
-    );
+        $second-section-color 28%,
+        $button-white-color 28%,
+        );
+        @media screen and (min-width: 320px)and (max-width: $mobile) {
+            padding-bottom: 20px;
+             background-image: linear-gradient(
+        to bottom,
+        $second-section-color 18%,
+        $button-white-color 18%,
+        );
+        }
+
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 120px;
+            background-image: linear-gradient(
+                $second-section-color 46.5%,
+                $button-white-color 46.5%
+            );
+        }
 }
 
 .container {
-    margin: 0 auto;
 
-    @media screen and (min-width: 480px) {
-    width: 480px;
-    }    
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
+    @media screen and (min-width: $mobile) {
+    max-width: $mobile;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
     }
 
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
     }
 }
