@@ -1,77 +1,78 @@
 $second-section-color: #FFF5F6;
 $primary-header-color: #FFA5BA;
 $accent-color: #D41443;
-$footer-svg-bgc: #FEA5BB;
 $primary-text-color: #907E82;
 
 .container {
-    padding: 0 20px;
+    outline: 1px solid black;
 }
 
 .footer {
 
+    position: relative;
+
     background-color: $second-section-color;
-    // height: 300px;
     min-width: 320px;
 
-    outline: 1px solid black;
+    &__text-box {
+        outline: 1px solid orange;
+    
+        margin-bottom: 43px;
+    }
 
-    &__title-one {
-        font-size: 18px;
-        line-height: 1.167;
+    &__title{
+        outline: 2px solid blue;
+
+        text-align: left;
+        font-family: $font-secondary;
+        font-weight: 400;
+        display: block;
         text-transform: uppercase;
-        color: $primary-header-color;
-        text-align: left;
 
-        margin-bottom: 17px;
-
-        outline: 2px solid blue;
-        display: block;
+        &--one {
+            font-size: 18px;
+            line-height: 1.167;
+           
+            color: $primary-header-color;
+            margin-bottom: 17px;
+            width: 232px;
+        }
+    
+        &--two {
+            font-size: 34px;
+            line-height: 1.147;
+            letter-spacing: 0.04em;
+            color: $accent-color;
+            width: 200px;
+        }
     }
-
-    &__title-two {
-        display: block;
-        font-size: 34px;
-        line-height: 1.147;
-        letter-spacing: 0.04em;
-        color: $accent-color;
-        text-align: left;
-
-        outline: 2px solid blue;
-    }
-}
-
-.text-box {
-    outline: 1px solid orange;
-
-    margin-bottom: 43px;
 }
 
 .social-box {
     outline: 1px solid cyan;
-
+   
     margin-bottom: 46px;
+    
+    &__list {
+       outline: 1px solid green;
+     
 
+       &:not(:first-child) {
+           margin-left: 28px;
+       }
+    }
     &__links {
-        
-
         display: flex;
         justify-content: flex-end;
     }
-     &__list {
-        outline: 1px solid green;
+    &__icon {
+       display: block;
+       fill: $primary-header-color;
 
-        &:not(:first-child) {
-            margin-left: 28px;
-        }
-    }
-
-    // Видалити
-    &__icon-holder {
-        width: 32px;
-        height: 32px;
-        background-color: $accent-color;
-        border-radius: 50%;
+       &:hover,
+       &:focus {
+           fill: $accent-color;
+       }
     }
 }
 
@@ -82,21 +83,38 @@ $primary-text-color: #907E82;
     font-size: 12px;
     line-height: 1.86;
     text-align: right;
-
+    
     &__phone {
         color: $accent-color;
     }
 }
 
 .copyright-box {
-     outline: 1px solid red;
+    outline: 1px solid red;
+    margin-top: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid $border-footer-color;
+    padding-top: 22px;
+    padding-bottom: 25px;
     &__text {
+        
         color: $primary-text-color;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.52;
         text-align: center;
 
+        max-width: 150px;
+        @media screen and (min-width: $tablet){
+            max-width: 276px;
+            letter-spacing: 0.02em;
+            padding-top: 29px;
+            padding-bottom: 18px;
+        }
         outline: 1px solid blue;
     }
+  
 }
