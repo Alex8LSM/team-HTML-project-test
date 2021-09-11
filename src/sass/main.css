@@ -208,6 +208,7 @@ header .header-holder {
 }
 
 .advantages {
+
   background-color: #FFF5F6;
   padding-bottom: 97px;
 }
@@ -216,6 +217,7 @@ header .header-holder {
   .advantages {
     padding-bottom: 140px;
   }
+
 }
 
 .hide {
@@ -232,6 +234,7 @@ header .header-holder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
     padding: 0 76px 0 36px;
   }
 }
@@ -252,10 +255,12 @@ header .header-holder {
   }
   .advantages-list__item:not(:last-child) {
     margin-bottom: 104px;
+
   }
 }
 
 @media screen and (min-width: 768px) {
+
   .advantages-list__item:not(:last-child) {
     margin-right: 60px;
   }
@@ -279,6 +284,7 @@ header .header-holder {
   background-size: cover;
 }
 
+
 .advantages-list__title {
   font-family: "Titan One", sans-serif;
   font-size: 36px;
@@ -288,6 +294,7 @@ header .header-holder {
   letter-spacing: 0.04em;
   text-align: left;
   color: #D41443;
+
   margin-bottom: 13px;
 }
 
@@ -302,6 +309,7 @@ header .header-holder {
     font-size: 58px;
     margin-bottom: 15px;
   }
+
 }
 
 .advantages-list__description {
@@ -314,6 +322,7 @@ header .header-holder {
   text-align: left;
   color: #000000;
 }
+
 
 @media screen and (min-width: 768px) {
   .advantages-list__description {
@@ -345,18 +354,23 @@ header .header-holder {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
+
     width: 768px;
+
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
+
     width: 1280px;
+
   }
 }
 

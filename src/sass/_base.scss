@@ -30,10 +30,29 @@ body {
     height: auto;
   }
 
+  .hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
   .container{
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;  
+
+    max-width: $mobile;
+    @media screen and (min-width: $tablet){
+      max-width: $tablet;
+    }
+    @media screen and (min-width: $desktop){
+      max-width: $desktop;
+    }
 }
   
  
