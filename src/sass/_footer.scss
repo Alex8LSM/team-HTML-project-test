@@ -1,11 +1,16 @@
 $second-section-color: #FFF5F6;
 $primary-header-color: #FFA5BA;
 $accent-color: #D41443;
-$footer-svg-bgc: #FEA5BB;
 $primary-text-color: #907E82;
 
 .container {
-    padding: 0 20px;
+    max-width: $mobile;
+    @media screen and (min-width: $tablet){
+      max-width: $tablet;
+    }
+    @media screen and (min-width: $desktop){
+        max-width: $desktop;
+    }
 }
 
 .footer {
@@ -16,28 +21,31 @@ $primary-text-color: #907E82;
 
     outline: 1px solid black;
 
-    &__title-one {
-        font-size: 18px;
-        line-height: 1.167;
+    &__title{
+        outline: 2px solid blue;
+
+        text-align: left;
+        font-family: $font-secondary;
+        font-weight: 400;
+        display: block;
         text-transform: uppercase;
-        color: $primary-header-color;
-        text-align: left;
 
-        margin-bottom: 17px;
-
-        outline: 2px solid blue;
-        display: block;
-    }
-
-    &__title-two {
-        display: block;
-        font-size: 34px;
-        line-height: 1.147;
-        letter-spacing: 0.04em;
-        color: $accent-color;
-        text-align: left;
-
-        outline: 2px solid blue;
+        &--one {
+            font-size: 18px;
+            line-height: 1.167;
+           
+            color: $primary-header-color;
+            margin-bottom: 17px;
+            width: 232px;
+        }
+    
+        &--two {
+            font-size: 34px;
+            line-height: 1.147;
+            letter-spacing: 0.04em;
+            color: $accent-color;
+            width: 200px;
+        }
     }
 }
 
@@ -53,8 +61,6 @@ $primary-text-color: #907E82;
     margin-bottom: 46px;
 
     &__links {
-        
-
         display: flex;
         justify-content: flex-end;
     }
@@ -64,6 +70,10 @@ $primary-text-color: #907E82;
         &:not(:first-child) {
             margin-left: 28px;
         }
+    }
+    &__link {
+        width: 32px;
+        height: 32px;
     }
 
     // Видалити
