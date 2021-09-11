@@ -208,7 +208,16 @@ header .header-holder {
 }
 
 .advantages {
-  padding: 0 70px 0 20px;
+
+  background-color: #FFF5F6;
+  padding-bottom: 97px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 140px;
+  }
+
 }
 
 .hide {
@@ -225,22 +234,56 @@ header .header-holder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: -30px;
+
+    padding: 0 76px 0 36px;
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .advantages-list {
+    padding: 0 115px;
+  }
+}
+
+.advantages-list__item {
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
+  .advantages-list__item {
+    max-width: 230px;
+  }
   .advantages-list__item:not(:last-child) {
-    margin-bottom: 38px;
+    margin-bottom: 104px;
+
   }
 }
 
 @media screen and (min-width: 768px) {
-  .advantages-list__item {
-    width: calc((100% - 6 * 30px) / 3);
-    margin: 30px;
+
+  .advantages-list__item:not(:last-child) {
+    margin-right: 60px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .advantages-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantages-list__item::before {
+  content: " ";
+  position: absolute;
+  height: 50px;
+  width: 44px;
+  outline: 1px solid violet;
+  top: -66px;
+  left: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .advantages-list__title {
   font-family: "Titan One", sans-serif;
@@ -251,6 +294,22 @@ header .header-holder {
   letter-spacing: 0.04em;
   text-align: left;
   color: #D41443;
+
+  margin-bottom: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages-list__title {
+    font-size: 58px;
+    margin-bottom: 15px;
+  }
+
 }
 
 .advantages-list__description {
@@ -264,6 +323,19 @@ header .header-holder {
   color: #000000;
 }
 
+
+@media screen and (min-width: 768px) {
+  .advantages-list__description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages-list__description {
+    font-size: 16px;
+  }
+}
+
 .gallery-section {
   max-width: 2000px;
   height: 122px;
@@ -275,21 +347,30 @@ header .header-holder {
   background-image: linear-gradient(to bottom, #FFF5F6 80%, #E5E5E5 80%);
 }
 
+.container {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
+
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+
+    width: 768px;
+
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1280px;
+
+    width: 1280px;
+
   }
 }
 
