@@ -3,16 +3,6 @@ $primary-header-color: #FFA5BA;
 $accent-color: #D41443;
 $primary-text-color: #907E82;
 
-.container {
-    max-width: $mobile;
-    @media screen and (min-width: $tablet){
-      max-width: $tablet;
-    }
-    @media screen and (min-width: $desktop){
-        max-width: $desktop;
-    }
-}
-
 .footer {
 
     background-color: $second-section-color;
