@@ -1,33 +1,63 @@
 
 .advantages {
-    // background-color: $second-section-color;
-    padding: 0 70px 0 20px;
-}
+    background-color: $second-section-color;
+    padding-bottom: 97px;
 
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 140px;
+    }
+}
 .hide {
     visibility: hidden;
     font-size: 0;
 }
+
 .advantages-list {
     padding: 0 70px 0 20px;
 
     @media screen and (min-width: $tablet) {
         display: flex;
-        margin: -30px;
+        padding: 0 76px 0 36px;
     }
 
+    @media screen and (min-width: $desktop) {
+        padding: 0 115px;
+    }
 
 &__item {
+    position: relative;
+
+   
     @media screen and (max-width: 767px) {
-        
+        max-width: 230px;
     &:not(:last-child) {
-        margin-bottom: 38px;
+        margin-bottom: 104px;
     }
     }
+
     @media screen and (min-width: $tablet) {
-        width: calc((100% - 6 * 30px) / 3);
-        margin: 30px;
+        &:not(:last-child) {
+            margin-right: 60px;
+        }
     }
+
+    @media screen and (min-width: $desktop) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+}
+&__item::before {
+    content: " ";
+    position: absolute;
+    height: 50px;
+    width: 44px;
+    outline: 1px solid violet;
+    top: -66px;
+    left: 4px;
+    //background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 &__title {
@@ -39,7 +69,17 @@
     letter-spacing: 0.04em;
     text-align: left;
     color: $accent-color;
+    margin-bottom: 13px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    margin-bottom: 15px;
 }
+ }
 
 &__description {
     font-family: $font-primary;
@@ -50,6 +90,13 @@
     letter-spacing: 0em;
     text-align: left;
     color: $secondary-text-color;
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    font-size: 16px;
 }
 
+}
 }
