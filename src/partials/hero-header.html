@@ -1,11 +1,11 @@
 <!-- Хедер -->
-<header class="header">
+<header class="header container">
     <div class="header-holder">
         <!-- Логотип -->
 
             <a href="./index.html" class="logo"> 
                 <svg class="header-logo" width="199" height="50">
-                    <use href="./images/sprite.svg#icon-icecream-logo"></use>
+                    <use href="./images/sprite.svg#icon-icecream-1"></use>
                     </svg> </a>  
 
         <!-- Кнопка бургера -->
@@ -29,9 +29,8 @@
             <!-- Кнопка закриття мобильного меню -->
             <button type="button" class="nav-tools__close-button js-close-menu">
                 <svg class="icon-close" width="14" height="14">
-                    <use href="#"></use>
+                    <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
-                X
             </button>
 
             <!-- Кнопка навигаціцї та відкриття модалки -->
@@ -65,9 +64,21 @@
     <section class="hero">
 
         <!-- Картинка Галі & Морозиво-->
-        <div class="box-image"></div>
+        <!-- <div class="box-image"></div> -->
+        <svg class="icon-circle" width="346" height="344">
+            <use href="./images/sprite.svg#icon-Ellipse-3-1"></use>
+            </svg>
+        
         <a href="#" class="hero__link--sootasty"></a>
-        <a href="#" class="hero__link--icecream"></a>
+
+        <a href="#" class="hero__link--icecream">
+            <picture >
+                <source media="(max-width: 767px)" srcset='./images/hero-header/ice-cream480.png 1x, ./images/hero-header/ice-cream480@2x.png 2x'>
+                <source media="(min-width: 768px)" srcset='./images/hero-header/ice-cream768.png 1x, ./images/hero-header/ice-cream768@2x.png 2x'>
+                <source media="(min-width: 1200px)" srcset='./images/hero-header/ice-cream1280.png 1x, ./images/hero-header/ice-cream1280@2x.png 2x'>
+                <img src="./images/hero-header/ice-cream.png" alt="морозиво">
+            </picture>
+        </a>
 
         <div class="caption">
             <!-- Заголовок сайту -->
