@@ -1,44 +1,36 @@
 .gallery-section {
     max-width: 2000px;
-    height: 210px;
-    padding-bottom: 80px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-bottom: 20px;
     background-image: linear-gradient(
-        to bottom,
-        $second-section-color 28%,
-        $button-white-color 28%,
-        );
-        @media screen and (min-width: 320px)and (max-width: $mobile) {
-            padding-bottom: 20px;
-             background-image: linear-gradient(
         to bottom,
         $second-section-color 18%,
         $button-white-color 18%,
         );
+
+        @media screen and (min-width: $mobile) {
+            margin-bottom: 80px;
+            height: 122px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(
+           to bottom,
+           $second-section-color 30%,
+           $button-white-color 30%,
+           );
         }
 
         @media screen and (min-width: $tablet) {
-            padding-bottom: 120px;
+            margin-bottom: 120px;
+            height: 264px;
             background-image: linear-gradient(
-                $second-section-color 46.5%,
-                $button-white-color 46.5%
+                $second-section-color 40%,
+                $button-white-color 40%
             );
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 120px;
+            height: 430px;
         }
 }
 
-.container {
-
-    @media screen and (min-width: $mobile) {
-    max-width: $mobile;
-    }
-    
-    @media screen and (min-width: $tablet) {
-        max-width: $tablet;
-    }
-
-    @media screen and (min-width: $desktop) {
-        max-width: $desktop;
-    }
-}
