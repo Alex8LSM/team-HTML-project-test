@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6{
     outline: green 1px solid;
     padding-left: 50px;
     padding-right: 50px;
-    background-color:rgba(255, 245, 246, 1);
+    background-color:$second-section-color;
     
 }
 .section-contacts__item{
@@ -47,6 +47,7 @@ h1,h2,h3,h4,h5,h6{
     
 }
 .section-contacts__subtitle{
+    font-family: DM Sans;
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
@@ -57,7 +58,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    color: #907E82 ;
+    color: $primary-text-color;
     padding-bottom: 25px;
     border-bottom: 1px solid #E1E1E1;
     margin-bottom: 25px;
@@ -66,7 +67,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
-    color: #FFA5BA;
+    color: $primary-header-color;
     margin-bottom: 10px;
 }
 .section-contacts__schedule{
@@ -78,7 +79,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    color: #907E82; 
+    color: $primary-text-color; 
 }
 .section-contact__btn{
 font-style: normal;
@@ -95,7 +96,7 @@ border-radius: 22px;
 }
 &.two{
     background:white;
-    color: rgba(212, 19, 66, 1);
+    color: $accent-color;
 }
 }
 .section-contact__btn-list{
