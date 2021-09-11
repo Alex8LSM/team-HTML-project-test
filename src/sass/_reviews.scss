@@ -1,38 +1,25 @@
-ul {
-  list-style: none;
-}
-.container-reviews {
-  min-width: 320px;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 100px;
-}
-.hide {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+// .container-reviews {
+//   min-width: 320px;
+//   max-width: 1280px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-top: 100px;
+// }
+// .hide {
+//   position: absolute;
+//   clip: rect(0 0 0 0);
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+// }
 .reviews {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
   &__customer {
     max-width: 926px;
-    // margin-left: -40px;
-    // min-width: 0;
-    // text-align: center;
-    // display: flex;
-    // justify-content: space-between;
-    // display: block;
-    // flex-direction: column;
-    // align-items: center;
-    // margin-left: auto;
-    // margin-right: auto;
   }
   &__card {
     // max-width: 100%;
@@ -44,33 +31,33 @@ ul {
   &__description-wrapper {
     max-width: 820px;
     position: relative;
-    background-color: #fafafa;
+    background-color: $background-reviews;
     z-index: -3;
     margin-left: auto;
     margin-right: auto;
   }
   &__description {
-    font-family: DM Sans;
+    font-family: $font-primary;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 186%;
     text-align: center;
-    color: #000000;
+    color: $secondary-text-color;
     letter-spacing: 0.04em;
     // background-color: #fafafa;
     padding: 32px 50px;
-    text-decoration: underline 1px solid #e1e1e1;
+    text-decoration: underline 1px solid $border-footer-color;
     text-underline-offset: 8px;
   }
   &__info {
-    font-family: DM Sans;
+    font-family: $font-primary;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 186%;
     text-align: center;
-    color: #000000;
+    color: $secondary-text-color;
     margin-top: 25px;
     margin-bottom: 50px;
   }
@@ -80,7 +67,7 @@ ul {
   content: "";
   background-image: url("../images/scobki.svg");
   background-size: 54px 40px;
-  fill: #000000;
+  fill: $secondary-text-color;
   height: 54px;
   width: 60px;
   display: block;
@@ -119,7 +106,7 @@ ul {
   background-size: 15px 15px;
   width: 15px;
   height: 15px;
-  background-color: #fff;
+  background-color: $button-white-color;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -131,6 +118,6 @@ ul {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #d9d9d9;
+  background-color: $markers-reviews-color;
   // opacity: 0.5;
 }
