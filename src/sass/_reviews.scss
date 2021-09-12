@@ -1,26 +1,22 @@
 article {
-  margin-top: 350px;
-  margin-bottom: 170px;
+  position: relative;
+  margin-bottom: 120px;
 }
-
 .reviews {
   margin-left: auto;
   margin-right: auto;
-  // margin-bottom: 100px;
   &__customer {
     max-width: 926px;
   }
   &__card {
-    // max-width: 100%;
     text-align: center;
-    // margin-right: auto;
   }
   &__img {
     margin: auto;
     padding-bottom: 20px;
   }
   &__description-wrapper {
-    max-width: 820px;
+    max-width: 620px;
     position: relative;
     background-color: $background-reviews;
     z-index: -3;
@@ -36,7 +32,6 @@ article {
     text-align: center;
     color: $secondary-text-color;
     letter-spacing: 0.04em;
-    // background-color: #fafafa;
     padding: 32px 50px;
     text-decoration: underline 1px solid $border-footer-color;
     text-underline-offset: 8px;
@@ -65,7 +60,7 @@ article {
   background-position: center;
   background-repeat: no-repeat;
   top: 8px;
-  left: 38px;
+  // left: 38px;
   z-index: -1;
 }
 .reviews__description::after {
@@ -83,13 +78,6 @@ article {
   position: absolute;
   bottom: -50px;
 }
-// .swiper-pagination-bullet {
-//   width: 15px;
-//   height: 15px;
-//   border-radius: 50%;
-//   background-color: #d9d9d9;
-//   // opacity: 0.5;
-// }
 .swiper-pagination-bullet-active::before {
   content: "";
   display: block;
@@ -111,4 +99,21 @@ article {
   border-radius: 50%;
   background-color: $markers-reviews-color;
   // opacity: 0.5;
+}
+@media screen and (min-width: $mobile) {
+  .reviews__description::before {
+    top: 8px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .reviews__description::before {
+    left: 5px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .reviews__description::before {
+    left: 3px;
+  }
 }
