@@ -1,39 +1,42 @@
 
 .advantages {
     background-color: $second-section-color;
-    padding-bottom: 97px;
+    padding-bottom: 145px;
+    margin-bottom: -48px;
 
     @media screen and (min-width: $tablet) {
-      padding-bottom: 140px;
-    }
-}
-.hide {
-    visibility: hidden;
-    font-size: 0;
-}
-
-.advantages-list {
-    padding: 0 70px 0 20px;
-
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        padding: 0 76px 0 36px;
+      padding-bottom: 246px;
+      margin-bottom: -106px;
     }
 
     @media screen and (min-width: $desktop) {
-        padding: 0 115px;
+        padding-bottom: 310px;
+        margin-bottom: -171px;
+      }
+}
+
+.advantages-list {
+    padding: 66px 70px 0 20px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        padding: 86px 76px 0 36px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 90px 115px 0 115px;
     }
 
 &__item {
     position: relative;
 
-   
     @media screen and (max-width: 767px) {
         max-width: 230px;
+
     &:not(:last-child) {
         margin-bottom: 104px;
     }
-    }
+     }
 
     @media screen and (min-width: $tablet) {
         &:not(:last-child) {
@@ -46,19 +49,67 @@
             margin-right: 30px;
         }
 }
-}
-&__item::before {
+ }
+
+&__item--first::before {
     content: " ";
     position: absolute;
     height: 50px;
     width: 44px;
-    outline: 1px solid violet;
     top: -66px;
-    left: 4px;
-    //background-image: url("");
+    left: -15px;
+    background-image: url("../images/ice-cream1.svg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        top: -85px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: -89px;
 }
+ }
+
+&__item--second::before {
+    content: " ";
+    position: absolute;
+    height: 50px;
+    width: 44px;
+    top: -66px;
+    left: -15px;
+    background-image: url("../images/ice-cream2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        top: -85px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: -89px;
+}
+ }
+
+&__item--third::before {
+    content: " ";
+    position: absolute;
+    height: 50px;
+    width: 44px;
+    top: -66px;
+    left: -8px;
+    background-image: url("../images/ice-cream3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        top: -85px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: -89px;
+}
+ }
 
 &__title {
     font-family: $font-secondary;
@@ -90,6 +141,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: $secondary-text-color;
+
     @media screen and (min-width: $tablet) {
         font-size: 14px;
     }
