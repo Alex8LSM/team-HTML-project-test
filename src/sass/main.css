@@ -1170,7 +1170,7 @@ article {
 
 @media screen and (min-width: 480px) {
   .reviews__description::before {
-    top: 8px;
+    left: 18px;
   }
 }
 
