@@ -1,45 +1,22 @@
 <!-- Хедер -->
 <header >
+    <div class="container container--modicator">
 
         <div class="header-holder">
            
             <!-- Логотип -->
 
-                <a href="./index.html" class="logo"> 
-                    <svg class="header-logo" width="199" height="50">
+                <a href="./index.html" class="header-holder__link"> 
+                    <svg class="header-holder__icon" width="199" height="50">
                         <use href="./images/sprite.svg#icon-icecream-1"></use>
                     </svg>
                 </a>  
-
-            <div class="menu-switch">
-
-            <button type="button" class="menu-switch__button">
-                Buy now 
-                <svg class="menu-switch__icon-buy" width="8" height="10">
-                    <use href="./images/sprite.svg#icon-Vector-1"></use>
-                </svg>
-            </button>
-
-            <!-- Кнопка бургера -->
-            
-            <button type="button"
-
-                class="burger js-open-menu"
-                aria-expanded="false"
-                aria-controls="menu">
-
-                <svg class="icon-menu" width="20" height="12">
-                <use href="./images/sprite.svg#icon-Burger"></use>
-                </svg>
-            
-            </button>
-        </div>
 
             <!-- Меню -->
 
             <div class="nav-tools  js-menu-container" id="menu">
 
-                <!-- Кнопка закриття мобильного меню -->
+            <!-- Кнопка закриття мобильного меню -->
 
                 <button type="button" class="nav-tools__close-button js-close-menu">
                     <svg class="icon-close" width="14" height="14">
@@ -47,7 +24,7 @@
                     </svg>
                 </button>
 
-                <!-- Кнопка навигаціцї та відкриття модалки -->
+            <!-- Кнопка навигаціцї та відкриття модалки -->
 
                 <button type="button" class="nav-tools__button">
                 Buy now <svg class="icon-buy" width="8" height="10">
@@ -55,61 +32,88 @@
                     </svg>
                 </button>
 
-                <!-- Навігація сайту -->
+            <!-- Навігація сайту -->
 
                 <nav class="navigation">
 
-                    <ul class="navigation-list">
-                        <li class="navigation__item"><a class="navigation__link navigation__link--current">Home</a></li>
-                        <li class="navigation__item"><a class="navigation__link">About us</a></li>
-                        <li class="navigation__item"><a class="navigation__link">How it’s made?</a></li>
-                        <li class="navigation__item"><a class="navigation__link">Our products</a></li>
-                        <li class="navigation__item"><a class="navigation__link">Contact</a></li>
+                    <ul class="navigation__list">
+                        <li class="navigation__list__item"><a class="navigation__list__link navigation__link--current">Home</a></li>
+                        <li class="navigation__list__item"><a class="navigation__list__link">About us</a></li>
+                        <li class="navigation__list__item"><a class="navigation__list__link">How it’s made?</a></li>
+                        <li class="navigation__list__item"><a class="navigation__list__link" href="#products">Our products</a></li>
+                        <li class="navigation__list__item"><a class="navigation__list__link">Contact</a></li>
                     </ul>
 
                 </nav>
 
             </div>
 
+            <div class="menu-switch">
+
+                <button type="button" class="buy">
+                    Buy now 
+                    <svg class="buy__icon" width="8" height="10">
+                        <use href="./images/sprite.svg#icon-Vector-1"></use>
+                    </svg>
+                </button>
+
+                <!-- Кнопка бургера -->
+            
+                <button type="button"
+
+                    class="burger js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="menu">
+
+                    <svg class="burger__icon" width="20" height="12">
+                    <use href="./images/sprite.svg#icon-Burger"></use>
+                    </svg>
+                
+                </button>
+            </div>
+
+
         </div>
 
         <!-- Секція герой, банер, кнопки, зображення, лічильник, -->
 
-        <section class="hero ">
-            
                     <!-- Картинка Галі & Морозиво-->
                     <!-- <div class="box-image"></div> -->
-                    <svg class="icon-circle" width="346" height="344">
-                        <use href="./images/sprite.svg#icon-Ellipse-3-1"></use>
-                    </svg>
-                    
-                    <a href="#" class="hero__link--sootasty">
-                        
-                        <source media="(min-width: 768px)" srcset='./images/hero-header/tasty768.png 1x, ./images/hero-header/tasty768@2x.png 2x'>
-                        <source media="(min-width: 1280px)" srcset='./images/hero-header/tasty1280.png 1x, ./images/hero-header/tasty1280@2x.png 2x'>
-                        <img src="./images/hero-header/tasty.png" alt="морозиво">
-                        
-                    </a>
+                    <div class="circle">
+                        <svg class="icon-circle" width="346" height="344">
+                            <use href="./images/sprite.svg#icon-Ellipse-3-1"></use>
+                        </svg>
+                    </div>
+
+                    <div class="so-tasty">
+                        <a href="#" class="hero__link--sootasty">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset='./images/hero-header/tasty768.png 1x, ./images/hero-header/tasty768@2x.png 2x'>
+                                <source media="(min-width: 1280px)" srcset='./images/hero-header/tasty1280.png 1x, ./images/hero-header/tasty1280@2x.png 2x'>
+                                <img src="./images/hero-header/tasty.png" alt="морозиво">
+                            </picture>
+                        </a>
+                    </div>
 
                     <a href="#" class="hero__link--icecream">
-                        <picture>
+                        <picture >
                             <source media="(max-width: 767px)" srcset='./images/hero-header/ice-cream480.png 1x, ./images/hero-header/ice-cream480@2x.png 2x'>
                             <source media="(min-width: 768px)" srcset='./images/hero-header/ice-cream768.png 1x, ./images/hero-header/ice-cream768@2x.png 2x'>
                             <source media="(min-width: 1280px)" srcset='./images/hero-header/ice-cream1280.png 1x, ./images/hero-header/ice-cream1280@2x.png 2x'>
-                            <img src="./images/hero-header/ice-cream.png" alt="морозиво">
+                            <img src="./images/hero-header/ice-cream.png" alt="морозиво" width="171" height="410">
                         </picture>
                     </a>
-
+                    
                     <div class="caption">
                         <div>
                             <!-- Заголовок сайту -->
                                 <h1 class="caption__title">ice cream <br> made with <br>
-                            <span class="caption__span">passion</span>
+                                    <span class="caption__passion">passion</span>
                                 </h1>
                             <div class="button-hold">
                             <!-- Кнопки якорні секцій -->
-                                <button class="caption__button-1">Products</button>
-                                <button class="caption__button-2">How it’s made?</button>
+                                <button class="caption__button-one">Products</button>
+                                <button class="caption__button-two">How it’s made?</button>
                             </div>
                         </div>
                             <!-- Лічильник продаж та доставок сайту -->
@@ -144,7 +148,5 @@
                         </div>
                         
                     </div>
-            
-        </section>
-    
+    </div>
 </header>
