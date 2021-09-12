@@ -80,17 +80,27 @@
     }
     &__image-desktop {
         @media screen and (min-width: $desktop) {
-        width: 516px;
-        height: 516px;
-        padding-left: 72px;
+            width: 340px;
+            height: 339px;
+            padding-left: 39px;
+            }
+        @media screen and (min-width: $desktop) {
+            width: 628px;
+            height: 516px;
+            padding-left: 72px;
         }
     }
     &__image {
-        width: 100%;
-        height: auto;
+        width: 280px;
+        height: 279px;
 
+        @media screen and (min-width: $tablet) {
+        height: 340px;
+        width: 339px;    
+        }
         @media screen and (min-width: $desktop) {
-        height: 516px;    
+        height: 516px;
+        width: 516px;
         }
     }
     &__content {
@@ -98,14 +108,14 @@
         
         @media screen and (min-width: $tablet) {
             display: block;
-            padding: 0 0 0 17px;            
+            padding: 0 0 0 17px;  
+            width: 340px;          
           }
         @media screen and (min-width: $desktop) {
             display: block;
             padding: 51px 97px 0 74px;
             width: 634px;
-            margin-left: 74px;
-          }  
+        }  
     }
     &__text-main {
         font-family: $font-primary;
