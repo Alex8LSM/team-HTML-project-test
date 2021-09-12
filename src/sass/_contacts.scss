@@ -81,10 +81,18 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .section-contacts__cart-list{
+    @media screen and (max-width:$tablet) {
+        display: flex;
+        flex-direction: column;  
+    }
+
     @media screen and (min-width: $tablet) {
         display: flex;
         margin-bottom: 81px;
     }
+}
+.section-contacts__item-minus{
+    margin-top: -84px;
 }
 .section-contacts__place{
     background-color: yellow;
