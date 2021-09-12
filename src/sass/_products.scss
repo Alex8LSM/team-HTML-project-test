@@ -78,8 +78,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
   padding: 40px;
   margin: 0 auto;
+  width: 100%;
+  height: 485px;
+  border-radius: 24px;
+
+  text-align: center;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -87,19 +93,14 @@
     }
   }
 
-  width: 280px;
-  height: 485px;
-  border-radius: 24px;
-
-  text-align: center;
-
   &:nth-child(1) {
     background-color: $header-base-color;
     &::before {
       content: '';
       position: absolute;
-      left: 16px;
+      left: 50%;
       top: -113px;
+      transform: translateX(-50%);
 
       z-index: 60;
 
@@ -124,8 +125,9 @@
     &::before {
       content: '';
       position: absolute;
-      left: 16px;
+      left: 50%;
       top: -113px;
+      transform: translateX(-50%);
 
       z-index: 60;
 
@@ -150,8 +152,9 @@
     &::before {
       content: '';
       position: absolute;
-      left: 16px;
+      left: 50%;
       top: -113px;
+      transform: translateX(-50%);
 
       z-index: 60;
 
@@ -176,7 +179,6 @@
     margin: 10px;
     padding: 40px 11px;
 
-    max-width: 220px;
     height: 485px;
 
     &:nth-child(1) {
@@ -385,6 +387,8 @@
 }
 
 .product__description {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   font-family: $font-primary;
@@ -397,6 +401,10 @@
   letter-spacing: 0.04em;
 
   color: $button-white-color;
+
+  @media screen and (max-width: 767px) {
+    width: 200px;
+  }
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
@@ -486,6 +494,14 @@
   line-height: 1.56;
 
   color: $button-white-color;
+
+  @media screen and (max-width: 767px) {
+    width: 220px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 15px;
+  }
 
   @media screen and (min-width: $desktop) {
     top: 60%;
