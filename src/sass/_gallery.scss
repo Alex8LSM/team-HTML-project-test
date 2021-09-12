@@ -1,6 +1,7 @@
 .gallery-section {
     max-width: 2000px;
     margin-bottom: 20px;
+    
 
         @media screen and (min-width: $mobile) {
             margin-bottom: 80px;
@@ -13,7 +14,6 @@
         }
 
         @media screen and (min-width: $desktop) {
-            position: relative;
             margin-bottom: 120px;
             height: 430px;
         }
