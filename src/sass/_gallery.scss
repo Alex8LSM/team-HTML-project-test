@@ -1,34 +1,19 @@
 .gallery-section {
     max-width: 2000px;
     margin-bottom: 20px;
-    background-image: linear-gradient(
-        to bottom,
-        $second-section-color 18%,
-        $button-white-color 18%,
-        );
 
         @media screen and (min-width: $mobile) {
             margin-bottom: 80px;
             height: 122px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-image: linear-gradient(
-           to bottom,
-           $second-section-color 30%,
-           $button-white-color 30%,
-           );
         }
 
         @media screen and (min-width: $tablet) {
             margin-bottom: 120px;
             height: 264px;
-            background-image: linear-gradient(
-                $second-section-color 40%,
-                $button-white-color 40%
-            );
         }
 
         @media screen and (min-width: $desktop) {
+            position: relative;
             margin-bottom: 120px;
             height: 430px;
         }
