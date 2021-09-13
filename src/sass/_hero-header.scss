@@ -560,6 +560,7 @@
 
     &__icon {
         fill: $accent-color; 
+        
         @media screen and (min-width: $desktop){
             width: 26px;
             height: 26px;
