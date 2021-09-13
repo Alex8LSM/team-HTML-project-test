@@ -10,16 +10,16 @@
 .section-about {
     background-color: $second-section-color; 
     padding-top: 125px;   
-    padding-bottom: 105px;
+    padding-bottom: 39px;
     position: relative;
 
         @media screen and (min-width: $tablet) {
             padding-top: 130px;
-            padding-bottom: 152px;
+            padding-bottom: 66px;
         }
         @media screen and (min-width: $desktop) {
             padding-top: 125px;
-            padding-bottom: 129px;
+            padding-bottom: 39px;
     }
 
     &__lable {
@@ -79,15 +79,13 @@
           }
     }
     &__image-desktop {
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: $tablet) {
             width: 340px;
             height: 339px;
-            padding-left: 39px;
             }
         @media screen and (min-width: $desktop) {
-            width: 628px;
-            height: 516px;
-            padding-left: 72px;
+            width: 516px;
+            height: 516px;            
         }
     }
     &__image {
@@ -108,13 +106,18 @@
         
         @media screen and (min-width: $tablet) {
             display: block;
-            padding: 0 0 0 17px;  
-            width: 340px;          
+            padding: 0; 
+            margin-left: 17px; 
+            width: 340px;    
+            z-index: 1;       
           }
         @media screen and (min-width: $desktop) {
             display: block;
-            padding: 51px 97px 0 74px;
-            width: 634px;
+            padding: 51px 0 0 0;
+            margin-left: 74px;
+            width: 463px;
+            z-index: 1;
+            
         }  
     }
     &__text-main {
@@ -199,30 +202,30 @@
         }
 
         @media screen and(min-width: $tablet) {
-            visibility: hidden;
-        //     position: absolute;
-        //     left: 50%;
-        //     transform: translateX(-50%);
-        //     bottom: 17px;
-        //     width: 768px;
-        //     height: 382px;
-        //     background-image: url("../images/milk-desktop.png");
-        //     background-repeat: no-repeat;
-        //     background-size: 768px 382px;                  
-    
-        // @media screen and(min-device-pixel-ratio: 2),
-        //         screen and (min-resolution: 192dpi),
-        //         screen and (min-resolution: 2dppx) {
-        //         background-image: url("../images/milk-desktop@2x.png");
-        // }
-        }
-
-        @media screen and(min-width: $desktop) {
-            visibility: visible;
+        //  visibility: hidden;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: 53px;
+            bottom: -17px;
+            width: 768px;
+            height: 382px;
+            background-image: url("../images/milk-desktop.png");
+            background-repeat: no-repeat;
+            background-size: 768px 382px;                  
+    
+        @media screen and(min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                background-image: url("../images/milk-desktop@2x.png");
+        }
+        }
+
+        @media screen and(min-width: $desktop) {
+            // visibility: visible;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -34px;
             width: 1282px;
             height: 534px;
             background-image: url("../images/milk-desktop.png");
@@ -263,6 +266,7 @@
     &__icon {
         vertical-align: middle;
         margin-left: 13.6px;   
-        border-radius: 2px;     
+        border-radius: 2px;
+        stroke: $accent-color;     
     }
 }
