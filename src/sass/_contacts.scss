@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5,h6{
         max-width: 220px;
         margin: 0 auto 0 auto;
         padding: 50px 31px;
-        margin-top: -84px;
+        margin-top: -78px;
         &:last-child{
             margin-bottom: 0;
         }
@@ -69,7 +69,7 @@ h1,h2,h3,h4,h5,h6{
     @media screen and(min-width:$desktop){
          flex-basis: calc(100%/3);
          padding: 50px 43px 62px 43px;
-         margin-top: -84px;
+         margin-top: -102px;
          &:last-child{
             margin-bottom: 0;
         }
@@ -92,8 +92,11 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 .section-contacts__item-minus{
-    margin-top: -84px;
-}
+    @media screen and (max-width:$tablet) {
+        margin-top: -84px;
+    } 
+    }
+  
 .section-contacts__place{
     background-color: yellow;
     width: 80px;
@@ -191,6 +194,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
+    
     color: $primary-text-color; 
     @media screen and (min-width:$tablet) {
         display: flex;
@@ -201,9 +205,10 @@ h1,h2,h3,h4,h5,h6{
         display: flex;
         flex-direction: column;
         font-size: 16px;
-        &:not(:last-child){
-            margin-bottom: 10px;
-        }
+     
+    }
+    &:not(:last-child){
+        margin-bottom: 10px;
     }
    
 }
@@ -221,7 +226,11 @@ border-radius: 22px;
         margin-bottom: 10px;
         @media screen and(min-width:$tablet) {
             margin-right: 15px;
+            width:174px ;
         }  
+        @media screen and (min-width:$desktop) {
+            width: 180px; 
+        }
     }
     &.two{
         background:white;
@@ -229,6 +238,9 @@ border-radius: 22px;
     }
     @media screen and (min-width:$tablet) {
         width: 191.45px; 
+    }
+    @media screen and (min-width:$desktop) {
+        width: 198px; 
     }
 
 }
