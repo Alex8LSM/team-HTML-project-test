@@ -1,6 +1,6 @@
 article {
   position: relative;
-  margin-bottom: 230px;
+  padding-bottom: 230px !important;
 }
 .reviews {
   margin-left: auto;
@@ -102,13 +102,17 @@ article {
 }
 @media screen and (min-width: $mobile) {
   .reviews__description::before {
+    font-size: 12px;
     left: 18px;
+    line-height: 255%;
   }
 }
 
 @media screen and (min-width: $tablet) {
   .reviews__description::before {
     left: 5px;
+    font-size: 14px;
+    line-height: 216%;
   }
 }
 
