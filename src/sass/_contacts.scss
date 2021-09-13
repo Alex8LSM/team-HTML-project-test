@@ -13,24 +13,24 @@ h1,h2,h3,h4,h5,h6{
     margin-left: auto;
     margin-right: auto;
     min-width:320px ;
- 
+    padding-bottom: 130px;
 
     background-color:$second-section-color;
     & > .container{
-
-    padding-left: 50px;
-    padding-right: 50px; 
-    @media screen and (min-width:$desktop) {
-        padding-left: 115px;
-        padding-right: 115px; 
-    }
-    
-    }
-    padding-bottom: 130px;
+        padding-left: 50px;
+        padding-right: 50px; 
+        @media screen and (min-width:$desktop) {
+            padding-left: 115px;
+            padding-right: 115px; 
+            }
+        @media screen and (min-width:$desktop) {
+            background-image: url(../images/sectionbg2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            }
+    } 
 }
-
-
-
 
 .section-contacts__item{ 
     background-color: white;
