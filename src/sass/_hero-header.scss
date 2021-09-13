@@ -77,6 +77,7 @@
 
     &__icon{
         margin-left: 21px;
+        stroke: $accent-color;
     }
 
 }
@@ -204,12 +205,14 @@
         display: none;
     }
 
-    .icon-buy {
-        margin-left: 27px;
+    
+}
 
-        @media screen and (min-width: $tablet){
-            margin-left: 21px;
-        }
+.icon-buy {
+    margin-left: 27px;
+    stroke: $accent-color;
+    @media screen and (min-width: $tablet){
+        margin-left: 21px;
     }
 }
 
@@ -338,6 +341,7 @@
         background-color: #ECEBEB;
     }
 }
+
 // Секція счетчика
 .counter-sale {
     display: none;
@@ -403,7 +407,6 @@
             font-size: 14px;
             line-height: 1.29; 
         }
-        
     }    
 }
 // Картинки на герої
@@ -451,8 +454,6 @@
     }
 }
 
-
-
 .hero__link--sootasty {
     display: none;
     position: absolute;
@@ -464,7 +465,6 @@
         display: block;
     }
 }
-
 
 .big-eco {
     margin-left: 120px;
@@ -503,10 +503,6 @@
         }
     }
 
-    .icon-arrow-right {
-        margin-bottom: 7px;
-    }
-
     &__button {
         margin-top: 7px;
         padding: 0;
@@ -518,14 +514,14 @@
         @media screen and (min-width: $desktop){
             width: 26px;
             height: 26px;
-        }
+        }   
+    }
 
-        &__icon {
-            fill: $accent-color; 
-            @media screen and (min-width: $desktop){
-                width: 26px;
-                height: 26px;
-            }
+    &__icon {
+        fill: $accent-color; 
+        @media screen and (min-width: $desktop){
+            width: 26px;
+            height: 26px;
         }
     }
 }
