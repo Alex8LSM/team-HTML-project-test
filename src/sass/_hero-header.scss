@@ -102,7 +102,7 @@
     width: 250px;
     background-color: $background-mobile-menu;
     z-index: 50;
-    transform: translateX(100%);
+    transform: translateY(100%);
 
     @media screen and (min-width: $tablet){
         width: 254px;
@@ -110,7 +110,7 @@
 
     @media screen and (min-width: $desktop){
         position: static;
-        transform: translateX(0);
+        transform: translateY(0);
         width: 541px;
         height: 50px;
         display: flex;
@@ -125,7 +125,7 @@
     position: absolute;
     pointer-events: auto;
     transform: translateX(0);
-    height: 1020px;
+    height: 100vh;
     z-index: 500;
     
 }
@@ -258,7 +258,6 @@
     position: relative;
     z-index: 5;
     @media screen and (min-width: $tablet){
-        // position: static;
         margin-bottom: 66px;
         display: flex;
         justify-content: space-between;
@@ -480,6 +479,7 @@
 
     @media screen and (min-width: $tablet){
         display: block;
+        bottom: 0;
     }
 
     @media screen and (min-width: $desktop){
