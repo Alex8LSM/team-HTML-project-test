@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6{
     
     }
  
-    @media screen and (min-width:$tablet) and (max-width:$desktop) {
+    @media screen and (min-width:$tablet) and (max-width:1279px) {
         max-width: 220px;
         margin: 0 auto 0 auto;
         padding: 50px 31px;
@@ -326,7 +326,7 @@ transition: linear all 250ms;
   
     //   min-width: 530px;
     //   min-height: 580px;
-    width: 450px;
+    max-width: 450px;
     height: 610px;
     border: 3px solid  #FFB8CA;
     background-color: #fff;
