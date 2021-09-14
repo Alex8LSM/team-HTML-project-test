@@ -15,7 +15,7 @@
 }
 
 .container {
-    @extend %gallery-flex;
+   //  @extend %gallery-flex;
     margin-right: 2px;
 
     @media screen and (min-width: $tablet) {
